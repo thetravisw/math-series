@@ -23,40 +23,40 @@ def test_fib_six():
 
 def test_lucas_one():
   expected = 2
-  actual = lucas(1)
+  actual = lucas(0)
   assert actual == expected
 
 def test_lucas_two():
   expected = 1
-  actual = lucas(2)
+  actual = lucas(1)
   assert actual == expected
 
 def test_lucas_four():
-  expected = 4
+  expected = 7
   actual = lucas(4)
   assert actual == expected
 
 def test_sum_one():
-  expected = 0
+  expected = 1
   actual = sum_series(1)
   assert actual == expected
 
 def test_sum_two():
-  expected = 8
+  expected = 13
   actual = sum_series(7)
   assert actual == expected
 
 def test_sum_three():
-  expected = 22
+  expected = 36
   actual = sum_series(6,4,2)
   assert actual == expected
 
-def test_sum_three():
-  expected = 597
-  actual = sum_series(11,3,9)
+def test_sum_four():
+  expected = 78
+  actual = sum_series(6,6,6)
   assert actual == expected
 
-def test_sum_four():
-  expected = 48
-  actual = sum_series(6,6,6)
+def test_sum_five():
+  expected = 966
+  actual = sum_series(11,3,9)
   assert actual == expected
